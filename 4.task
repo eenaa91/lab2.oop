@@ -1,0 +1,19 @@
+//Create a program that asks the user for the first number and the last number and then prints all numbers between those two. Use a while loop.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        listNumbers();
+    }
+    public static void listNumbers() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Unesite dva broja:");
+        int number1 = scanner.nextInt();
+        int number2 = scanner.nextInt();
+        while (number1 != number2) {
+            System.out.print(number1 + " ");
+            number1++;
+            scanner.close();
+        }
+    }
+}
