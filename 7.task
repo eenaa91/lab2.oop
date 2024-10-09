@@ -1,0 +1,16 @@
+//Create a method called drawStarsPiramid that will accept the number of rows as a parameter and print a half pyramid shape where the number of rows will be dictated by the sent parameter. 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner unos = new Scanner(System.in);
+        System.out.print("Upiši broj: ");
+        int n = unos.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        unos.close();
+    }
+}
