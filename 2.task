@@ -1,0 +1,19 @@
+//Create a program that asks the user for three numbers and then prints their sum.
+import java.util.Scanner;
+    public class Main {
+        public static void main(String[] args) {
+            sumNumbers();
+        }
+        public static void sumNumbers () {
+            Scanner scanner = new Scanner(System.in);
+            int[] array = new int[3];
+            int sum = 0;
+            System.out.println("Unesi 3 broja:");
+            for (int i = 0; i < 3; i++) {
+                array[i] = scanner.nextInt();
+                sum += array[i];
+            }
+            scanner.close();  // Close the Scanner
+            System.out.println("Suma brojeva je: " + sum);
+        }
+    }
