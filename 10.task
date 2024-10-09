@@ -1,0 +1,21 @@
+//In this exercise, you need to create a guess number game. The user enters  a number, which is in the range 0 to 100 (both 0 and 100 are possible).  Then the user has the chance to guess once, what the number is. The program should print "The number is lower", "The number is greater" or "Congratulations, your guess is correct!" depending on the number the user typed. The guessing should be made repeatedly until the user types the right number. The program also needs to include a variable of type int, which is used to count the guesses the user has made. The program should always print the number of guesses along with the answer. In the end your game should look like this: 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner unos = new Scanner(System.in);
+        int secretNumber = 14, n = 0;
+
+        System.out.println("Try to guess a number");
+        while (n != secretNumber) {
+            n = unos.nextInt();
+            if (n < secretNumber) {
+                System.out.println("Too small");
+            } else if (n > secretNumber) {
+                System.out.println("Too big");
+            }
+        }
+        System.out.println("Congratulations, your guess is correct!");
+        unos.close();
+    }
+}
+     
