@@ -1,0 +1,16 @@
+//Write a program to print the inverted half pyramid shape as shown in the image below?
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner unos = new Scanner(System.in);
+        System.out.print("Upiši broj: ");
+        int n = unos.nextInt();
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        unos.close();
+    }
+}
