@@ -1,0 +1,17 @@
+//Create a method printText that prints the following string of characters: "In the beginning there were the swamp, the hoe and Java." and a line break.  Users should be able to enter  how many times the text should be printed.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        printMessage();
+    }
+    public static void printMessage() {
+        int n;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of repetitions:");
+        n = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.println("In the beginning there were the swamp, the hoe, and Java.");
+        }
+        scanner.close();
+    }
+}
