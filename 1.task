@@ -1,0 +1,18 @@
+//Create a program that asks the user for a password. If the password is right, a secret message is shown to the user.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner pass = new Scanner(System.in);
+
+        System.out.print("Unesi pasword: ");
+        String password = pass.nextLine();
+        
+        if (password.equals("ena")) {
+            System.out.println("Tacan password");
+        } else {
+            System.out.println("Pogresan Password");
+        }
+
+        pass.close();
+    }
+}
